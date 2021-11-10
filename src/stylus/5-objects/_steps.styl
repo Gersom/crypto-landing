@@ -1,0 +1,97 @@
+.steps
+  padding: 200px 0 320px
+
+  &__title
+    font-family: 'brandon_grotesquemedium'
+    font-size: 50px
+    font-weight: 400
+    line-height: 60px
+    span
+      color $color-primary
+  &__paragraph
+    font-size: 18px
+    line-height: 32px
+    padding: 30px 0
+  &__item
+    display: flex
+    &__number
+      font-family: 'loveloline_light'
+      font-size: 60px
+      color: #d8d8d8
+      position relative
+      &:before
+        content: ''
+        position: absolute
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        background: #ff8e9d
+        opacity: 0.32
+        top: 35px
+        left: -67px
+      &:after
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #ff8e9d;
+        top: 39px;
+        left: -63px;
+        z-index: 1;
+
+    &__content,
+    &__image
+      box-sizing: border-box
+      display: flex
+      width: 100%
+    &__content
+      padding-left: 15px
+      padding-right: 15px
+    &__text
+      position: relative
+      border-bottom: 1px dashed #dcdcdc
+      border-left: 1px dashed #dcdcdc
+      border-radius: 20px 0 0 20px
+      border-top: 1px dashed #dcdcdc
+      padding: 80px 0 55px 60px;
+
+    &__image
+      padding-top: 60px
+    &__figure
+      margin: 60px auto 0
+      img
+        display: block
+  
+  &__item:nth-child(1)
+    .steps__item__text
+      border-radius: 0 0 0 20px
+      border-top: none
+      padding: 0 0 60px 60px
+      &:before
+        content: ''
+        width: 1px
+        height: 39px
+        position: absolute
+        background: #fff
+        top: 0
+        left: -1px
+    .steps__item__image
+      padding-top: 0
+  &__item:nth-child(2n)
+    flex-direction: row-reverse
+    .steps__item__text
+      border none
+      padding: 80px 40px 55px 45px
+    .steps__item__image
+      border-radius: 0 20px 20px 0
+      border-right: 1px dashed #dcdcdc
+      padding: 45px 65px 0 0
+
+@media (min-width: 992px)
+  .steps
+    &__item
+      &__content,
+      &__image
+        flex: 0 0 50%
+        width: 50%
