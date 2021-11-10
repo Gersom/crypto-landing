@@ -269,18 +269,45 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
 }
+.features__image-box {
+  width: 218px;
+  height: 218px;
+  border-radius: 50%;
+  border: 2px solid #eff5fa;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.features__image-box img {
+  display: block;
+}
+.features__item {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  width: 33.3333333%;
+}
 .features__item__title {
   font-size: 28px;
   font-weight: normal;
   font-family: 'proxima_novaregular';
+  padding: 44px 0 20px;
 }
 .features__item__paragraph {
   color: rgba(48,61,83,0.7);
@@ -288,6 +315,41 @@ h6 {
   font-size: 18px;
   font-weight: normal;
   line-height: 32px;
+}
+.features__item:nth-child(2n):before,
+.features__item:nth-child(2n):after {
+  content: '';
+  width: 120px;
+  height: 1px;
+  border-top: 1px dashed #d8e2e9;
+  position: absolute;
+  top: 29%;
+}
+.features__item:nth-child(2n):before {
+  left: -60px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .features__item:nth-child(2n):before {
+    width: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .features__item:nth-child(2n):before {
+    left: -50px;
+  }
+}
+.features__item:nth-child(2n):after {
+  right: -65px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .features__item:nth-child(2n):after {
+    width: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .features__item:nth-child(2n):after {
+    right: -50px;
+  }
 }
 .header {
   background: #fff;
@@ -335,7 +397,7 @@ h6 {
   color: #01daba;
 }
 .steps {
-  padding: 200px 0 320px;
+  padding: 200px 0 100px;
 }
 .steps__title {
   font-family: 'brandon_grotesquemedium';
