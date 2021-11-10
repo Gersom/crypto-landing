@@ -216,10 +216,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 318px 0 180px;
-}
-.cover-page__wrapper {
-  width: 50%;
+  padding: 150px 0 180px;
 }
 .cover-page__title {
   font-family: 'brandon_grotesquebold';
@@ -245,7 +242,7 @@ h6 {
 .cover-page__aside {
   position: absolute;
   top: 25%;
-  right: 10%;
+  right: 5%;
   z-index: -1;
 }
 .features {
@@ -279,7 +276,7 @@ h6 {
 .header {
   background: #fff;
   left: 0;
-  padding-top: 75px;
+  padding: 15px 0;
   position: fixed;
   right: 0;
   top: 0;
