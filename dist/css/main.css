@@ -185,7 +185,7 @@ button:focus {
   outline: 0;
 }
 body {
-  font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'proxima_novaregular', 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   min-height: 100vh;
   color: rgba(48,61,83,0.7);
 }
@@ -454,6 +454,51 @@ h6 {
             flex: 0 0 50%;
     width: 50%;
   }
+}
+.footer__wrapper {
+  border-bottom: 1px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 95px 0 60px;
+}
+.footer__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.footer__email {
+  font-size: 22px;
+  color: #222;
+  display: block;
+  margin: 12px 0 15px;
+}
+.footer__list {
+  width: 100%;
+}
+.footer__list__title {
+  font-family: 'brandon_grotesquemedium';
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 28px;
+}
+.footer__list__link {
+  color: rgba(33,33,33,0.7);
+  display: block;
+  font-size: 17px;
+  line-height: 36px;
+}
+.footer__list__link:hover {
+  color: #01daba;
+  text-decoration: none;
+}
+.footer__copyright {
+  padding: 45px 0;
+}
+.footer__copyright__paragraph {
+  font-size: 17px;
+  line-height: 34px;
 }
 /*------------------------------------*  #Utilities (Class simple)
 \*------------------------------------*/
